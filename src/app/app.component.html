@@ -1,27 +1,6 @@
-<table>
-  <thead>
-      <tr>
-          <th>Code</th>
-          <th>Name</th>
-          <th>Gender</th>
-          <th>Annual Salary</th>
-          <th>Date of Birth</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor='let employee of employees'>
-          <td>{{employee.code}}</td>
+<h1>App component</h1>
 
-          <td>{{employee.name|prefix:employee.gender }}</td>
+<br>
+<br>
 
-          <td>{{employee.gender}}</td>
-          <td>{{employee.annualSalary}}</td>
-          <td>{{employee.dateOfBirth}}</td>
-      </tr>
-      <tr *ngIf="!employees || employees.length==0">
-          <td colspan="5">
-              No employees to display
-          </td>
-      </tr>
-  </tbody>
-</table>
+    <app-child [hero]="title"></app-child>
